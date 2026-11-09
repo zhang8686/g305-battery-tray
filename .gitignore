@@ -1,0 +1,11 @@
+# Local diagnostics and previews (not part of the repository)
+preview/
+ref/
+*.log
+settings.txt
+
+# Windows / editor leftovers
+Thumbs.db
+Desktop.ini
+.vs/
+*.user
