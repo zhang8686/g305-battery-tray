@@ -5,6 +5,7 @@
 ![platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0078D6?style=flat-square)
 ![runtime](https://img.shields.io/badge/runtime-.NET%20Framework%204.8-512BD4?style=flat-square)
 ![license](https://img.shields.io/badge/license-MIT-2EA043?style=flat-square)
+[![download](https://img.shields.io/badge/download-Releases-1F6FEB?style=flat-square)](https://github.com/zhang8686/g305-battery-tray/releases/latest)
 
 > **把罗技 G305 / G305 SE 的剩余电量，常驻显示在 Windows 任务栏托盘里。**
 > 一个 106 KB 的绿色单文件程序：不装驱动、不开 G HUB、不联网、不写鼠标任何设置。
@@ -35,7 +36,7 @@ G305 用一节 AA 电池，电量往往几周才变一档。为了看这一个�
 
 | 项目 | 数值 |
 |---|---|
-| 主程序 `G305Battery.exe` | **108,544 B（106 KB）**，已内嵌多尺寸图标，单文件即可运行 |
+| 主程序 `G305Battery.exe` | **108,544 B（106 KB）**，已内嵌多尺寸图标，单文件即可运行；通过 Releases 分发 |
 | 最小运行体积 | **106 KB**（一个 exe），无安装包、无外部资源文件 |
 | 运行时进程 | 1 个，无后台服务、无子进程、无计划任务 |
 | 常驻内存（工作集） | 约 **20 MB**；冷启动瞬间约 36 MB，随后被系统裁剪；私有提交约 22–30 MB |
@@ -79,10 +80,10 @@ G305 用一节 AA 电池，电量往往几周才变一档。为了看这一个�
 
 ## 快速开始
 
-1. 插好 G305 原装 LIGHTSPEED 接收器（`046D:C53F`），鼠标开机。
-2. 双击 `G305Battery.exe`，托盘出现电量图标——**无需安装**。
-3. Windows 可能把新图标收进「隐藏图标」区域，从溢出面板拖到任务栏即可。
-4. 右键可切换图标样式 / 配色 / 刷新间隔，或开启开机启动（启用前请把 exe 放到长期保留的位置）。
+1. 从 [Releases](https://github.com/zhang8686/g305-battery-tray/releases/latest) 下载 `G305Battery.exe`（106 KB）。
+2. 插好 G305 原装 LIGHTSPEED 接收器（`046D:C53F`），鼠标开机。
+3. 把 exe 放到一个长期保留的目录，双击运行，托盘出现电量图标——**无需安装**。
+4. Windows 可能把新图标收进「隐藏图标」区域，从溢出面板拖到任务栏即可；右键可切换图标样式 / 配色 / 刷新间隔，或开启开机启动。
 
 悬停显示 `G305 90% · 放电中 | 10:53`；**左键单击**立即刷新，**双击**查看完整读数。
 
@@ -143,13 +144,14 @@ repo/
 ├── NOTICE.md
 ├── .gitignore
 ├── screenshots/          # 8 张界面与图标图
-├── G305Battery.exe       # 主程序，双击即用
 └── source/
     ├── G305Battery.cs    # 全部功能实现
     ├── app.ico           # 内嵌应用图标
     ├── build.ps1
     └── make_logo.py
 ```
+
+可执行程序在 [Releases](https://github.com/zhang8686/g305-battery-tray/releases/latest) 提供，仓库只保留源码、文档与截图，不提交二进制。
 
 ## 来源与许可
 
